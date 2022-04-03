@@ -1,13 +1,21 @@
 import React from 'react';
 import useTshirt from '../../hooks/useTshirt';
 import Cart from '../Cart/Cart';
+import './Home.css'
+import Tshirt from './Tshirt/Tshirt';
 
 const Home = () => {
-    const [tshirt, setTshirt] = useTshirt()
+    const [tshirts, setTshirt] = useTshirt()
     return (
         <div className='home-container'>
+
             <div className="tshirt-container">
-                <h2>{tshirt.length}</h2>
+                {
+                    tshirts.map(t => <Tshirt
+                        key={t._id}
+                        tshirt={t}
+                    ></Tshirt>)
+                }
             </div>
             <div className="cart-container">
                 <Cart></Cart>

@@ -1,0 +1,21 @@
+.tshirt{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 1rem;
+    
+}
+.tshirt img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.tshirt-btn{
+    border: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tshirt-btn:hover{
+    background-color: gainsboro;
+}

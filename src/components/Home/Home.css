@@ -2,3 +2,12 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+.tshirt-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background: wheat;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
